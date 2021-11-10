@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="James McClay's\nTimes Tables!"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textview_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Practice all tables\n Or enter a table to practice:"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edittext_timestable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="All tables"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_timestable"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Start!" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+    <RadioButton
+        android:id="@+id/radio_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="Normal Mode"
+        />
+
+    <RadioButton
+        android:id="@+id/radio_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="Random Mode" />
+    </RadioGroup>
+
+</RelativeLayout>
