@@ -46,6 +46,8 @@ class TableActivity : AppCompatActivity() {
             table = 2
         }
 
+	nextQuestion(question,answer,button)
+
         button.setOnClickListener {
             if (answerShowing == false) {
                 showAnswer(question, answer, button)
